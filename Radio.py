@@ -5,12 +5,12 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.select import Select
 #Opetion is use for stop the chrome page after complete script, it will not close automatically.
 
-options = Options()
-options.add_experimental_option("detach",True)
+#options = Options()
+#options.add_experimental_option("detach",True)
 
 #Webdriver.Chrome is for launch the chrome browser.
 
-driver = webdriver.Chrome(options = options)
+driver = webdriver.Chrome() #options = options)
 
 #driver.maximize_window is for maximize the browser page.
 
@@ -58,6 +58,7 @@ for check_box in check_boxes:
         check_box.click()
 print(check_boxes)
 print(len(check_boxes))
+time.sleep(1)
 
 #it is use for select the value from dropdown list. 3 mathods is used for select the dropdown value.
 

@@ -80,3 +80,10 @@ drop= driver.find_element(By.XPATH,"//option[@value='option2']").click()
 links= driver.find_element(By.CLASS_NAME,"blinkingText")
 print(links.get_attribute("href"))
 
+
+
+
+
+
+
+

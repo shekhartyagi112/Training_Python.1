@@ -11,7 +11,7 @@ chrome_options.add_experimental_option("prefs",prefs)
 
 options = Options()
 options.add_experimental_option("detach",True)
-driver= webdriver.Chrome(options=options)   #executable_path="D:\drivers\chromedriver.exe", chrome_options=chrome_options)
+driver= webdriver.Chrome(options = options)   #executable_path="D:\drivers\chromedriver.exe", chrome_options=chrome_options)
 
 driver.maximize_window()
 driver.implicitly_wait(5)
@@ -21,5 +21,5 @@ driver.find_element(By.XPATH,"//*[name()='path' and contains(@fill,'#ffffff')]")
 
 driver.find_element(By.XPATH,"//*[@id='srchBarShwInfo']").send_keys("whey")
 time.sleep(1)
-driver.find_element(By.XPATH,"(//div[@class='styles__name___-ixKa'])[1]").click()
-time.sleep(3)
+#driver.find_element(By.XPATH,"(//div[@class='styles__name___-ixKa'])[1]").click()
+#time.sleep(3)

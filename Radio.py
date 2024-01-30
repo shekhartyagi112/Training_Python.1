@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.select import Select
+
 #Opetion is use for stop the chrome page after complete script, it will not close automatically.
 
 options = Options()
